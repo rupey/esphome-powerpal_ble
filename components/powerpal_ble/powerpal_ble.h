@@ -80,6 +80,7 @@ class Powerpal : public esphome::ble_client::BLEClientNode, public Component {
   void set_pulses_sensor(sensor::Sensor *pulses_sensor) { pulses_sensor_ = pulses_sensor;}
   void set_watt_hours(sensor::Sensor *watt_hours_sensor) {watt_hours_sensor_ = watt_hours_sensor;}
   void set_timestamp(sensor::Sensor *timestamp_sensor) { timestamp_sensor_ = timestamp_sensor;}
+  void set_daily_pulses(uint64_t daily_pulses) { daily_pulses_ = daily_pulses; }
   void set_daily_pulses_sensor(sensor::Sensor *daily_pulses_sensor) { daily_pulses_sensor_ = daily_pulses_sensor;}
 #ifdef USE_TIME
   void set_time(time::RealTimeClock *time) { time_ = time; }
